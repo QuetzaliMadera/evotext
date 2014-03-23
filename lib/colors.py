@@ -2,7 +2,7 @@
 __author__ = 'Yovanni'
 
 from operator import itemgetter
-#from evospace import *
+from evospace import *
 from lib.evospace import *
 import random
 import re
@@ -34,7 +34,7 @@ def limit_min(txt):
     return [0 for tmp in limit(txt)]
 
 def init_pop(populationSize):
-    text = "{Diseñamos | Creamos | Fabricamos | Construimos | Desarrollamos} {este auto | este carro | esta pieza de arte | este impresionante transporte | este auto único | este carro único}, {para ser | para convertirse en | para que sea | con el fin de ser} la mejor forma {de viajar | de transportarte | para ir de un lugar a otro | de moverte | de transladarte} {con tu familia | con tus amigos | a donde quieras | románticamente | cómodamente | de forma divertida | silenciosamente | de forma segura}. Por eso está {equipado | preparado | construido | fabricado | diseñado | creado | desarrollado} con {barras laterales | protecciones a los costados | puertas protegidas | protecciones laterales} contra {impacto | golpes | accidentes | choques}. Puede incluir {frenos ABS | un sistema antibloqueo de ruedas | frenos antibloqueo | frenos reforzados | frenos inteligentes | frenos antiderrapantes} y bolsas de aire {frontales | al frente | delanteras | grandes | suaves | seguras}. {Y por si fuera poco, es maniobrable, estable y eficiente | Cuenta con dirección hidráulica en todas sus versiones | Tiene un motor de 4 cilindros de 1.6L | Tiene transmisión manual de 5 velocidades | Tiene transmisión automática de 4 velocidades | Tiene un espacio interior y amplia cajuela | Por eso este transporte es tu mejor opción | Compra seguro, compra inteligentemente}."
+    text = "{Deliciosa | Increíble | Jugosa | Suave | Exquisita | Suculenta} carne {de res | 100% de res | de vacuno}  {a la parrilla | cocinada al fuego del asador | cocinada a las brasas}, con {4 rebanadas de | crujiente | 4 crujientes rebanadas de | deliciosas rebanadas de | grandes rebanadas de} tocino, queso amarillo { derretido con el calor de la carne | americano | recién rebanado | muy fresco | suizo}. Entre la carne y el pan encontrarás {rebanadas frescas de | una deliciosa ensalada de | verduras frescas como | verduras como | una ensalada compuesta por } tomate, lechuga, cebolla y aderezo. {Un tributo a los amantes del tocino | Tienes que probarla será una experiencia única | Disfruta todo el sabor que te ofrece}."
     #populationSize = 5 #esta variable se recibe como parametro
     listSize = len(limit(text)) #esta variable se recibe como parametro
     chrome = [] #variable local
