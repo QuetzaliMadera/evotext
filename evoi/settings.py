@@ -7,9 +7,9 @@ TEMPLATE_DEBUG = DEBUG
 TWITTER_TOKEN =  ""
 TWITTER_SECRET = ""
 
-FACEBOOK_APP_ID = "601392646562888"
-FACEBOOK_APP_SECRET = "9eafe1d0005ce4c0e20b7579674a7dfe"
-FACEBOOK_REDIRECT_URL = "http://localhost:8000/facebook/login/"
+FACEBOOK_APP_ID = ""
+FACEBOOK_APP_SECRET = ""
+FACEBOOK_REDIRECT_URL = ""
 
 
 AUTHENTICATION_BACKENDS = (
@@ -35,7 +35,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'evoi',                      # Or path to database file if using sqlite3.
         'USER': 'django',                      # Not used with sqlite3.
-        'PASSWORD': 'leonardo',                  # Not used with sqlite3.
+        'PASSWORD': 'secret',                  # Not used with sqlite3.
         'HOST': '127.0.0.1',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
@@ -107,7 +107,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = '3r5!##ueas(@jtv+m0&s5-unr26mhgq(21_&5zmj8p9!@ee4m_'
+SECRET_KEY = '6*k&wq4[>C~1LR:}:^9H%swpQJ/)n$G,?j:Yegi9B8^gs,WT@d4Y5W_3}dVZ(BeO'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -133,7 +133,7 @@ WSGI_APPLICATION = 'evoi.wsgi.application'
 
 TEMPLATE_DIRS = (
 
-    '/Users/Quetz/PycharmProjects/evoi/templates',
+    '/webapps/evoi/evoi/templates',
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
